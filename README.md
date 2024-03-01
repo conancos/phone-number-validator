@@ -6,7 +6,7 @@
 
 ### _**The system includes several pre-established formats, discarding invalid patterns for a specific geographical area.**_
 
-**Try if your telephone number is correcto to call to Units States (EEUU).**
+**Test if if your telephone number is correct to call to Units States(US).**
 
 <hr width="60%">
 
