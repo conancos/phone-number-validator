@@ -1,0 +1,287 @@
+body {
+    background-image: url('../images/1400-validator-1.jpg');
+}
+
+.main .main-machine .codec-js {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 96%;
+    height: 70%;
+    padding-top: 25px;
+    padding-bottom: 2%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    overflow: hidden;/*Solo para que la animación no haga salir el scroll*/
+
+    & .container-uls {
+        width: 70%;
+        padding: 10px 0px;
+        
+        /* margin-bottom: 5%; */
+        display: flex;
+        justify-content: space-evenly;
+        
+        /* flex-wrap: wrap; */
+        border-radius: 5px;
+        background: #00f3;
+        backdrop-filter: blur(5px);
+        box-shadow: 0 0 10px 5px #000;
+        /* animation: to .2s forwards;
+        animation-delay: .1s;
+        opacity: 0; */
+
+        & ul .li-valids {
+            /* width: 100%; */
+            list-style: none;
+            color: #fff;
+            font-size: 1rem;
+            
+            letter-spacing: 0px;
+            /* line-height: 1.5; */
+            background: #0007;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 5px/*  10px */;
+
+            &:hover {
+                color: #0f0;
+            }
+        }        
+    }
+
+    /*MediaQueries anidados funcionando con 'múltiples clases misma regla'*/
+    @media(width <425px) {
+        .container-uls ul .li-valids {
+            font-size: .8rem;            
+        }
+        .container-uls {
+            padding: 5px;
+        }
+    }
+    @media(width <=375px) {
+        .container-uls {
+            width: 70%;
+        }
+        .container-uls ul .li-valids {
+            padding: 5px;
+        }
+    }
+    @media(width <=330px) {
+        .container-uls {
+            padding: 0px;
+        }
+        .container-uls ul .li-valids {
+            margin: 5px 0px;
+            font-size: .7rem;
+        }
+    }
+    @media(width <=275px) {
+        .container-uls {
+            margin: 0;
+            padding: 0;            
+        }
+        .container-uls ul .li-valids {
+            padding: 3px 5px;
+            font-size: .65rem;
+        }
+    }
+
+    & label.number {
+        width: 75%;
+        display: inline-block;
+        color: #fff;
+        margin: 0 auto;
+        padding: 10px 0;
+        text-align: center;
+        font-family: 'Jost';
+        font-size: 1.6rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 5px #000;
+        background: #00f3;
+        backdrop-filter: blur(5px);
+        /* animation: to .2s forwards;
+        animation-delay: .2s;
+        opacity: 0; */
+
+        & input#number {
+            width: 55%;
+            padding: 5px;
+            margin: 10px auto;
+            position: relative;
+            left: 0%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.6rem;
+            caret-color: #fff;
+            outline: none;
+            color: #fff;
+            border-radius: 5px;
+            background: #0005;
+            backdrop-filter: blur(10px);
+
+            &:focus {
+                box-shadow: inset 0 0 4px 2px #000;
+                transition: .2s;
+            }
+        }
+        
+        
+        & .ico-button {
+            position: absolute;
+            bottom: 22px;
+            right: 5%;
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            background: #0f0a;
+            border-radius: 50%;
+            border: solid 2px #000;
+            outline: none;
+            box-shadow: inset 0 0 4px 2px #000, 0 0 4px 2px #aaa;
+            cursor: pointer;
+            transition: all .2s;
+
+            &:hover {
+                background: #5f5;
+                box-shadow: inset 0 0 4px 2px #000, 0 0 6px 2px #0f0;
+                
+            }
+            &:active {
+                box-shadow: inset 0 0 4px 4px #000, 0 0 4px 2px #0f0;
+                transition: .2s;
+            }
+            
+            &:active .ico-phone{
+                width: 24px;
+                height: 24px;
+                position: relative;
+                /* top: 2px; */
+                transition: .2s;
+            }
+            & .ico-phone {
+                width: 27px;
+                height: 27px;
+                transition: .2s;
+            }
+        }
+    }
+
+    & .calling {
+        width: 60%;
+        letter-spacing: 4px;
+        line-height: 1;
+        text-align: center;
+        padding: 7px;
+        color: #fff;
+        -webkit-text-fill-color: #fff;
+        -webkit-text-stroke-color: #0f0;
+        -webkit-text-stroke-width: .6px;
+        text-shadow: 0 0 8px #0f0;
+        box-shadow:inset 0 0 8px 0px #fff4, 0 0 6px 3px #000;
+        border-radius: 6px;
+        backdrop-filter: brightness(25%) blur(7px);
+        font-size: 2.1rem;
+        font-family: 'Jost', sans-serif;
+        animation: destello .7s forwards;
+        animation-delay: 1s;
+        animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        z-index: 1;
+        opacity: 0;
+
+        & b {
+            filter: opacity(0);
+            animation: parpadeo 3.5s infinite ease-in-out;
+        }
+        & b:nth-child(1) {
+            animation-delay: 1s;
+        }
+        & b:nth-child(2) {
+            animation-delay: 1.5s;
+        }
+        & b:nth-child(3) {
+            animation-delay: 2s;
+        }
+    }
+
+    /*MediaQuery .calling anidado */
+    @media (width <=375px) {
+        .calling {
+            width: 65%;
+            font-size: 1.6rem;
+        }        
+    }
+    @media (width <=300px) {
+        .calling {
+            width: 70%;
+            font-size: 1.4rem;
+            padding: 0 5px;            
+        }
+    }
+}
+
+/* Introduce Number */
+/*Separado pq en Demasiado anidamiento, las mediaQuery parecen no funcionar*/
+@media (width <=475px) {
+    .main .main-machine .codec-js label.number input#number {
+        font-size: 1.4rem;
+        left: -5%;
+    }
+    .main .main-machine .codec-js label.number .ico-button {
+        bottom: 20px;
+    }
+}
+@media (width <=375px) {
+    .main .main-machine .codec-js label.number {
+        width: 85%;
+    }    
+    .main .main-machine .codec-js label.number .ico-button {
+        bottom: 19px;
+        right: 7%;
+    }
+}
+@media (width <=320px) {
+    .main .main-machine .codec-js label.number {
+        font-size: 1.3rem;
+        padding: 3px;
+    }    
+    .main .main-machine .codec-js label.number input#number {
+        font-size: 1.3rem;
+        left: -10%;
+        width: 60%;
+    }
+    .main .main-machine .codec-js label.number .ico-button {
+        bottom: 15px
+    }
+}
+@media (width <=275px) {
+    /* .main .main-machine .codec-js label.number {
+        font-size: 1.2rem;
+    } */
+    .main .main-machine .codec-js label.number input#number {
+        font-size: 1.2rem;
+        width: 60%;
+    }
+}
+
+/*Motions*/
+@keyframes destello {
+    0% {
+        transform: perspective(10px) rotateX(-90deg);
+    }
+    100% {        
+        transform: perspective(0px) rotateX(0deg);
+        opacity: 1;
+        /* overflow: hidden; */
+    }
+}
+@keyframes parpadeo {
+    0%, 100% {filter: opacity(0)}
+    50% {filter: opacity(1)}
+}

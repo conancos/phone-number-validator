@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/ico-JS-35x35.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <title>Phone Number Validator</title>
+</head>
+<body>
+    <header class="machine-head">
+        <h1 class="title-name">Phone Num Validator</h1>
+        <section class="explication">
+            <p>The system includes several pre-established formats, discarding invalid patterns for a specific geographical area.</p>
+            <p>You can enter any number as long as it meets a valid pattern for the United States area.</p>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main-machine">
+            <article class="codec-js">
+                <div class="container-uls">
+                    <ul class="valids">
+                        <li class="li-valids">555-555-5555</li>
+                        <li class="li-valids">555 555 5555</li>
+                        <li class="li-valids left">5555555555</li>
+                    </ul>
+                    <ul class="valids">
+                        <li class="li-valids">(555)555-5555</li>
+                        <li class="li-valids">(555) 555-5555</li>
+                        <li class="li-valids right">1 555 555 5555</li>
+                    </ul>
+                    <!-- <ul class="valids down-pos">
+                    </ul> -->
+                </div>
+                <label for="number" class="number">Introduce Number:
+                    <input id="number" type="text" autofocus="true" placeholder="1234567890">
+                    <button class="ico-button">
+                        <img class="ico-phone"src="./images/phone-36.png" alt="phone icon">
+                    </button>
+                </label>
+                <span class="calling">online</span>
+                <audio id="fail" src="./sounds/telefono-descolgado.mp3"></audio>
+                <audio id="llamada" src="./sounds/llamada-satelite.mp3"></audio>
+                <audio id="ocupado" src="./sounds/tono-ocupado.mp3"></audio>
+            </article>
+            <figure class="container-image">
+                <img class="image-machine" src="./images/768-validator-2.jpg" alt="teleoperator woman in office." loading="lazy">
+            </figure>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="../../index.html" class="links">JavaScript's Projects</a>
+        <a href="https://conancos.dev/portfolio" class="links" target="_blank" rel="noopener noreferrer">Portfolio</a>
+    </footer>
+    <script src="./scripts/Proyecto-4.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

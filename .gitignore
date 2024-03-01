@@ -1,0 +1,14 @@
+# Descartamos el contenido de /images
+images/**
+
+# Menos el Rótulo
+!images/readme-img-val.png
+
+# Menos 2 imágenes de fondo descartadas para el proyecto,
+# pero que aprovecho para estilar el README.md en GitHub.
+!images/1400-validator-2.jpg
+!images/1400-validator-1.jpg
+
+# Y los Logos
+!images/logo-conancos.png
+!images/768-validator-2.jpg
