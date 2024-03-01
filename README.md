@@ -12,14 +12,16 @@
 
 #### **More images generates with AI, but discarded for the final project**
 
-<img alt="machine generate with AI" src="./images/1400-validator-2.jpg" width="600px">
-<img alt="machine generate with AI" src="./images/1400-validator-1.jpg" width="600px">
+<img alt="machine generate with AI" src="./images/1400-validator-2.jpg" width="900px">
+<p></p>
+<img alt="machine generate with AI" src="./images/1400-validator-1.jpg" width="900px">
 
 <p></p>
+<br>
 
 # 🟦🟥 **Visit site:** [Phone Num Validator ↗](https://conancos.dev/next/logica-js/PhoneNumberValidator/index.html) 🟥🟦
 
-<img alt="logo machine" src="./images/768-validator-3.jpg>
+<img alt="logo machine" src="./images/768-validator-2.jpg">
 
 <p></p>
 
