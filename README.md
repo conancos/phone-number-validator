@@ -19,7 +19,7 @@
 <p></p>
 <br>
 
-# 🟦🟥 **Visit site:** [Phone Num Validator ↗](https://conancos.dev/next/logica-js/PhoneNumberValidator/index.html) 🟥🟦
+# 🟥 **Visit site:** [Phone Num Validator ↗](https://conancos.dev/next/logica-js/PhoneNumberValidator/index.html) 🟥
 
 <img alt="logo machine" src="./images/768-validator-2.jpg">
 
